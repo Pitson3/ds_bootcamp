@@ -901,10 +901,10 @@ for i in range(int(list_length)):
     scholarship_names.append(main_content_extract[i].h4.a.text)
                
     #Capture the full text with the posted on string included
-    full_str_post_date = main_content_extract[0].find_all('p')[1].text
+    full_str_post_date = main_content_extract[i].find_all('p')[1].text
      
     #Extract only the date .format = {day month year}    
-    full_str_close_date = main_content_extract[0].find_all('p')[-1].text
+    full_str_close_date = main_content_extract[i].find_all('p')[-1].text
     
     #recombination of the extracted values into a string
     creation_date_extract =  " ".join(full_str_post_date.split(" ")[36:39])
@@ -976,51 +976,51 @@ scholarship_details.head(10)
     </tr>
     <tr>
       <th>1</th>
-      <td>18 October 2021</td>
+      <td>13 October 2021</td>
       <td>University of Oslo NORAD’s NORHED II  PhD and ...</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>05 November 2021                   \n         ...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>18 October 2021</td>
+      <td>22 September 2021</td>
       <td>Nutrition 4 Health Activity Scholarship Opport...</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>04 October 2021                   \n          ...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>18 October 2021</td>
+      <td>15 September 2021</td>
       <td>The Global Learning Scholarship Program (GLSP)</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>16 December 2021                   \n         ...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>18 October 2021</td>
+      <td>25 August 2021</td>
       <td>The Schlumberger Foundation Faculty for the Fu...</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>05 November 2021                   \n         ...</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>18 October 2021</td>
+      <td>11 August 2021</td>
       <td>Kalinga Institute of Industrial Technology (KI...</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>15 August 2021                   \n           ...</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>18 October 2021</td>
+      <td>10 August 2021</td>
       <td>African Scientific, Research and Innovation Co...</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>31 July 2021                   \n             ...</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>18 October 2021</td>
+      <td>10 August 2021</td>
       <td>The Ashinaga African Initiative 2022</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>28 January 2022                   \n          ...</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>18 October 2021</td>
+      <td>14 July 2021</td>
       <td>PhD and Postdoc Positions in Machine Learning ...</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>23 August 2021                   \n           ...</td>
     </tr>
   </tbody>
 </table>

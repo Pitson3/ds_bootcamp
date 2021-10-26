@@ -12732,7 +12732,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[141]:</div>
+<div class="prompt input_prompt">In&nbsp;[156]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Empty list sequences for later usage =&gt; capturing data for the 3 columns</span>
@@ -12754,10 +12754,10 @@ div#notebook {
     <span class="n">scholarship_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">main_content_extract</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">h4</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
                
     <span class="c1">#Capture the full text with the posted on string included</span>
-    <span class="n">full_str_post_date</span> <span class="o">=</span> <span class="n">main_content_extract</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">full_str_post_date</span> <span class="o">=</span> <span class="n">main_content_extract</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
      
     <span class="c1">#Extract only the date .format = {day month year}    </span>
-    <span class="n">full_str_close_date</span> <span class="o">=</span> <span class="n">main_content_extract</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">full_str_close_date</span> <span class="o">=</span> <span class="n">main_content_extract</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
     
     <span class="c1">#recombination of the extracted values into a string</span>
     <span class="n">creation_date_extract</span> <span class="o">=</span>  <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">full_str_post_date</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)[</span><span class="mi">36</span><span class="p">:</span><span class="mi">39</span><span class="p">])</span>
@@ -12789,7 +12789,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[142]:</div>
+<div class="prompt input_prompt">In&nbsp;[157]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
@@ -12804,7 +12804,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[143]:</div>
+<div class="prompt input_prompt">In&nbsp;[158]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">scholarship_details</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -12820,7 +12820,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[143]:</div>
+<div class="prompt output_prompt">Out[158]:</div>
 
 
 
@@ -12857,51 +12857,51 @@ div#notebook {
     </tr>
     <tr>
       <th>1</th>
-      <td>18 October 2021</td>
+      <td>13 October 2021</td>
       <td>University of Oslo NORAD’s NORHED II  PhD and ...</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>05 November 2021                   \n         ...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>18 October 2021</td>
+      <td>22 September 2021</td>
       <td>Nutrition 4 Health Activity Scholarship Opport...</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>04 October 2021                   \n          ...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>18 October 2021</td>
+      <td>15 September 2021</td>
       <td>The Global Learning Scholarship Program (GLSP)</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>16 December 2021                   \n         ...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>18 October 2021</td>
+      <td>25 August 2021</td>
       <td>The Schlumberger Foundation Faculty for the Fu...</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>05 November 2021                   \n         ...</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>18 October 2021</td>
+      <td>11 August 2021</td>
       <td>Kalinga Institute of Industrial Technology (KI...</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>15 August 2021                   \n           ...</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>18 October 2021</td>
+      <td>10 August 2021</td>
       <td>African Scientific, Research and Innovation Co...</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>31 July 2021                   \n             ...</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>18 October 2021</td>
+      <td>10 August 2021</td>
       <td>The Ashinaga African Initiative 2022</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>28 January 2022                   \n          ...</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>18 October 2021</td>
+      <td>14 July 2021</td>
       <td>PhD and Postdoc Positions in Machine Learning ...</td>
-      <td>01 November 2021                   \n         ...</td>
+      <td>23 August 2021                   \n           ...</td>
     </tr>
   </tbody>
 </table>
